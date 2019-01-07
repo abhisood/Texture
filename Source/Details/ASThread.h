@@ -197,11 +197,11 @@ namespace ASDN {
     }
 
     void AssertHeld() {
-      ASDisplayNodeCAssert(_owner == std::this_thread::get_id(), @"Thread should hold lock");
+//      ASDisplayNodeCAssert(_owner == std::this_thread::get_id(), @"Thread should hold lock");
     }
     
     void AssertNotHeld() {
-      ASDisplayNodeCAssert(_owner != std::this_thread::get_id(), @"Thread should not hold lock");
+//      ASDisplayNodeCAssert(_owner != std::this_thread::get_id(), @"Thread should not hold lock");
     }
     
     explicit Mutex (bool recursive) {
